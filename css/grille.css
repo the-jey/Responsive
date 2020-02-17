@@ -1,3 +1,14 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /* -------------------------------
 -------GRILLE MOBILE FIRST XS-----
 ---------------------------------*/
@@ -11,6 +22,16 @@
 
 .row {
   width: 100%;
+}
+
+.row > div {
+  float: left;
+}
+
+.row::after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .col-xs-1 {
